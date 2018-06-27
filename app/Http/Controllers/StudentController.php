@@ -12,7 +12,7 @@ class StudentController extends Controller
 {
     use Helpers;
 
-    public function index(){
+    public function showAll(){
         $students = Student::all();
 
         if($students){

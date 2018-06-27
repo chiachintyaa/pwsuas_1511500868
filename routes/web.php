@@ -24,7 +24,7 @@ $api->version('v1',function ($api){
         Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException([],"Method Not Allowed");
     });
 
-    $api->get('students','App\Http\Controllers\StudentController@index');
+    $api->get('students','App\Http\Controllers\StudentController@showAll');
     $api->get('students/{id}','App\Http\Controllers\StudentController@show');
     $api->post('students','App\Http\Controllers\StudentController@store');
     $api->put('students/{id}','App\Http\Controllers\StudentController@update');
